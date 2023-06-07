@@ -13,7 +13,7 @@ async function changeContent() {
             following = json['data']['userstatus']['status']['following'];
             follower = json['data']['userstatus']['status']['follower'];
 
-            if (!id.includes('"')) {
+            if (!des.includes('"')) {
                 const userstatus = `<div class='yop'><br><span style="font-size:27px; white-space: nowrap; color: #000000; margin-left:10px; margin-right:15px;"><b>${nick}</b> (${userid})</span><br><br><span style="color: #000000; margin-left:10px;">팔로잉 </span><span style="color: rgb(22, 216, 163);">${following} </span><span>· </span><span style="color: #000000;">팔로워 </span><span style="color: rgb(22, 216, 163);">${follower}</span><br><br><span style="color: #000000; margin-left:10px; margin-right:15px;">${des}</span></a></div>`;
                 v.innerHTML = userstatus;
             }
