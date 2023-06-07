@@ -1,0 +1,25 @@
+.yop {
+    margin-top: 7px; 
+    margin-bottom: 7px; 
+    margin-left: 2px; 
+    background-color:#FFFFFF; 
+    display: table;
+    height:160px;
+    border-radius: 10px;
+
+    background-color: rgba(22, 216, 163, 0.01);
+
+    outline: solid 2px;
+    outline-color:#16D8A3;
+    transition: background-color 0.2s ease;
+    transition: outline-color 0.2s ease;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.yop:hover {
+    outline-color: rgb(22, 119, 216);
+    background-color: rgba(22, 119, 216, 0.01);
+}
