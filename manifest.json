@@ -1,8 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Sirup",
+    "name": "UglyFrog",
     "version": "0.1",
     "description": "마이페이지 미리보기",
+    "icons": {
+      "128": "icon.png"
+    },
     "permissions": [
         "activeTab"
     ],
