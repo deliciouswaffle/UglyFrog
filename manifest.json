@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "UglyFrog",
-    "version": "0.2",
-    "description": "마이페이지 미리보기",
+    "version": "1.0",
+    "description": "유저정보를 빠르게 알아보세요",
     "icons": {
       "128": "icon.png"
     },
