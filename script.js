@@ -38,6 +38,10 @@ async function changeContent() {
               if (!des.includes('<') && !id.includes('<') && !id.includes('"')) {
                 const userstatus = `<div class='statusBox'><br><img src="${profileImage}" alt="${nick}'s ProfileImage" class="pImage"><br><span style="font-size:27px; white-space: nowrap; color: #000000; margin-left:15px; margin-right:15px;"><b>${nick}</b> (${userid})</span><br><br><span style="color: #000000; margin-left:15px;">팔로잉 </span><span style="color: rgb(22, 216, 163);">${following} </span><span>· </span><span style="color: #000000;">팔로워 </span><span style="color: rgb(22, 216, 163);">${follower}</span><br><br><span class="userDes">${des}</span></div>`;
                 v.innerHTML = userstatus;
+                if (des===' ') {
+                    document.querySelector('.userDes').remove();
+                    document.querySelector('.statusBox').style.height='260px';
+                }
               }
             });
         }
