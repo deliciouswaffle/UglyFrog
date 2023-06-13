@@ -1,22 +1,21 @@
 .statusBox {
+    display: flex;
+    max-width: 590px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    overflow: hidden;
+
     margin-top: 7px; 
     margin-bottom: 7px; 
     margin-left: 2px; 
-    background-color:#FFFFFF; 
 
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-
-    background-color: /*rgba(22, 119, 216, 0.01)*/ #FFFFFF;
-
-    outline: solid 2px;
+    outline: solid 1px;
     outline-color:#16D8A3;
     transition: outline-color 0.2s ease;
-
-    white-space: nowrap;
-    overflow-x:scroll;
-    overflow-y:hidden;
 }
 
 .statusBox::-webkit-scrollbar {
@@ -29,14 +28,67 @@
 
 .userDes {
     color: #000000; 
-    margin-left:15px;
-    margin-right:15px;
 }
 
 .pImage {
-    margin-left:15px;
-    margin-bottom:35px;
+    aspect-ratio: 1 / 1;
+    margin-left: -7px; 
+    background-size: cover;
+    background-position: 50% 50%;
     border-radius: 50%;
-    width:115px;
-    height:115px;
+    width:56px;
+    height:56px;
+}
+
+.disc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userDesBox {
+    width: 400px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.name {
+    width: 150px;
+}
+
+.hide-text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div {
+    display:block;
+}
+
+.follow {
+    color: #555555;
+}
+
+.userstats {
+    position: absolute;
+    overflow: hidden;
+    inset: 0px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    transition: border 0.3s ease 0s;
+    z-index: -2;
+    content: "";
 }
