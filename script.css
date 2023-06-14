@@ -92,3 +92,13 @@ div {
     z-index: -2;
     content: "";
 }
+  
+.css-1g6ghgw:hover::before {
+    content: "이미지 제거";
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+  
